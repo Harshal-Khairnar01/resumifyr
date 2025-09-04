@@ -1,5 +1,4 @@
 import React from "react";
-import { landingPageStyles } from "../assets/dummyStyle";
 
 import {
   ArrowRight,
@@ -13,7 +12,6 @@ import {
 import { useState } from "react";
 import { useUser } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
-import { ProfileInfoCards } from "../components/Cards";
 
 const LandingPage = () => {
   const { user } = useUser();
@@ -305,8 +303,8 @@ const LandingPage = () => {
                         x2="100%"
                         y2="100%"
                       >
-                          <stop offset="0%" stopColor="#6ee7b7" />
-                          <stop offset="100%" stopColor="#34d399" />
+                        <stop offset="0%" stopColor="#6ee7b7" />
+                        <stop offset="100%" stopColor="#34d399" />
                       </linearGradient>
                     </defs>
 
@@ -360,9 +358,24 @@ const LandingPage = () => {
                       fill="#c084fc"
                       transform="rotate(-5 205 203)"
                     />
-                    <rect x="130" y="220" width="200" height="8" rx="4" fill="#a78bfa" transform="rotate(-5 230 224)"/>
-                    <rect x="130" y="240" width="100" height="6" rx="3" fill="#c084fc" transform="rotate(-5 180 243)"/>
-
+                    <rect
+                      x="130"
+                      y="220"
+                      width="200"
+                      height="8"
+                      rx="4"
+                      fill="#a78bfa"
+                      transform="rotate(-5 230 224)"
+                    />
+                    <rect
+                      x="130"
+                      y="240"
+                      width="100"
+                      height="6"
+                      rx="3"
+                      fill="#c084fc"
+                      transform="rotate(-5 180 243)"
+                    />
 
                     <circle
                       cx="100"
@@ -398,7 +411,12 @@ const LandingPage = () => {
                       fill="url(#elementGradient2)"
                       className="animate-float-4"
                     />
-                    <polygon points="300,50 310,70 290,70" fill="url(#elementGradient3)" className="animate-float-1" style={{animationDelay: '1s'}} />
+                    <polygon
+                      points="300,50 310,70 290,70"
+                      fill="url(#elementGradient3)"
+                      className="animate-float-1"
+                      style={{ animationDelay: "1s" }}
+                    />
                   </svg>
                 </div>
               </div>
